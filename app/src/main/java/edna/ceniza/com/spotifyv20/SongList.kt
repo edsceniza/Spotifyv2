@@ -11,14 +11,15 @@ data class SongList(
         val song_album: String = " ",
         val song_path: String = " ",
         val stat: Int = 0
-):Parcelable{
+):Parcelable {
     constructor(parcel: Parcel) : this(
             parcel.readString(),
             parcel.readString(),
             parcel.readString(),
             parcel.readString(),
             parcel.readInt()
-    ){}
+    ) {
+    }
 
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -42,5 +43,5 @@ data class SongList(
             return arrayOfNulls(size)
         }
     }
-
 }
+

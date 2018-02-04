@@ -22,6 +22,7 @@ import android.view.View
 import android.widget.LinearLayout
 import android.widget.Toast
 import android.widget.Toolbar
+import edna.ceniza.com.spotifyv20.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

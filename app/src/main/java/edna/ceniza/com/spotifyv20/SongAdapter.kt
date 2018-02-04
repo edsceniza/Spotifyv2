@@ -34,7 +34,7 @@ class SongAdapter (val songList: ArrayList<SongList>, val context: Context, val 
     }
 
     override fun getItemCount(): Int {
-        return msongList.size
+        return songList.size
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
