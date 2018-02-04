@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SongFragment">
+
+    <RelativeLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="@color/toolbarColor"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/up_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:src="@drawable/arrow_up_icon"
+            android:tint="@color/White" />
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/buffer"
+            android:layout_alignBottom="@+id/buffer"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_toLeftOf="@+id/buffer"
+            android:layout_toStartOf="@+id/buffer"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="AIRPLANE"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/buffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/songSinger"
+            android:layout_alignBottom="@+id/songSinger"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/songSinger"
+            android:layout_toStartOf="@+id/songSinger"
+            android:layout_weight="0"
+            android:gravity="start"
+            android:text=" • "
+            android:textColor="@color/White" />
+
+        <TextView
+            android:id="@+id/songSinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="iKON"
+            android:textColor="@color/White" />
+
+        <ImageView
+            android:id="@+id/play_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/songSinger"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:src="@drawable/play_circle"
+            android:tint="@color/White"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/pause_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/songTitle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:src="@drawable/pause_circle"
+            android:tint="@color/White"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</FrameLayout>
